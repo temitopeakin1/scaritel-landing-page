@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--- Basic Page Needs  -->
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scaritel Africa-- Building the Impossibility</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <img src="images/logo.png" alt="img"> 
+    <div class="container"></div>
+        <h1>Website Coming soon</h1>
+            <div class="count">
+                <div class="countd">
+                <span id="days">00</span>
+                DAYS
+            </div>
+            
+            <div class="count">
+                <div class="countd">
+                <span id="hours">00</span>
+                HOURS
+            </div>
+
+            <div class="count">
+                <div class="countd">
+                <span id="minutes">00</span>
+                MINS
+            </div>
+
+            <div class="count">
+                <div class="countd">
+                <span id="seconds">00</span>
+                SECS
+            </div>
+        </div>
+    </div>
+ <h2>For Information and Enquiries, Send a Mail to</h2>
+ <h3><a href="mailto:founder@scaritel.com">founder@scaritel.com</a>, <a href="mailto:info@scaritel.com">info@scaritel.com</a></h3> 
+
+ <!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-youtube"></a>
+ <script type="text/javascript">
+        var count = new Date("July 14,2020 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var d = count - now;
+
+            var days =  Math.floor(d/(1000*60*60*24));
+            var hours = Math.floor((d%(1000*60*60*60))/(1000*60*60));
+            var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+            var seconds = Math.floor((d%(1000*60))/1000);
+
+            document.getElementById("days").innerHTML = days; 
+            document.getElementById("hours").innerHTML = hours; 
+            document.getElementById("minutes").innerHTML = minutes; 
+            document.getElementById("seconds").innerHTML = seconds; 
+
+            if(d <= 0) {
+                clearInterval(x);
+            }
+
+        },1000)
+</script>
+</body>
+</html>
