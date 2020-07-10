@@ -75,9 +75,11 @@ a {
     font-size: 80px;
     width: 10px;
     text-align: center;
+    font-size: 100px;
+    font-weight: bolder;
     text-decoration: none;
     margin: 5px 5px;
-    border-radius: 30%;
+    border-radius: 60%;
     margin-top: 60px;
     margin-bottom: 0px;
   }
