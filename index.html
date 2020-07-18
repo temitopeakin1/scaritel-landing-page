@@ -46,40 +46,8 @@
 <a href="https://www.facebook.com/ScaritelAfricaLtd" target="_blank"class="fa fa-facebook"></a>
 <a href="https://twitter.com/scaritel1" target="_blank"class="fa fa-twitter"></a>
 <a href="https://www.youtube.com/channel/UCDLj3-ZHtPU1QhANH-tf-qA" target="_blank"class="fa fa-youtube"></a>
- <script type="text/javascript">
-        var count = new Date("July 14,2020 00:00:00").getTime();
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var d = count - now;
-
-            var days =  Math.floor(d/(1000*60*60*24));
-            var hours = Math.floor((d%(1000*60*60*60))/(1000*60*60));
-            var minutes = Math.floor((d%(1000*60*60))/(1000*60));
-            var seconds = Math.floor((d%(1000*60))/1000);
-
-            document.getElementById("days").innerHTML = days; 
-            document.getElementById("hours").innerHTML = hours; 
-            document.getElementById("minutes").innerHTML = minutes; 
-            document.getElementById("seconds").innerHTML = seconds; 
-
-            if(d <= 0) {
-                clearInterval(x);
-            }
-
-        },1000)
-</script>
-            <!--Start of Tawk.to Script-->
-            <script type="text/javascript">
-            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-            (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/5f07ad2c67771f3813c0c29c/default';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-             })();
-            </script>
-    <!--End of Tawk.to Script-->
+<script src="main.js"></script>
+<script src="tawkto.js"></script>
+    
 </body>
 </html>
